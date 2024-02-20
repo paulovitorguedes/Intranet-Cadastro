@@ -1,0 +1,564 @@
+@charset "UTF-8";
+
+
+/* ao criar uma div, esse comando
+	faz as bordas ser contabilizada 
+	no tamanho da div que foi solicitado */
+*, 
+*:before, 
+*:after {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+
+/* obriga a div pai respeitar as configiracoes
+	da div filha*/
+.clearfix:before,
+.clearfix:after {
+ content: " ";
+ display: table;
+}
+.clearfix:after {
+ clear: both;
+}
+.clearfix {
+ *zoom: 1;
+}
+
+
+/* Retira o espaçamento entre as celulas das tabelas que ja vem como default*/
+table{
+	border-collapse: collapse;
+}
+
+legend.cLegend{
+	cursor: pointer;
+}
+
+div#divSearch{
+	padding: 60px;
+}
+
+table#search tr{
+	border-bottom: 3px solid  #dddddd;
+}
+
+table#search tr#trTitulo{
+	border-bottom: 3px solid  #606060;
+}
+
+table#search td.cTitulo{
+	width: 300px;
+	font-weight: bolder;
+}
+
+table#search td{
+	padding-top: 10px;
+}
+
+
+table#search td.cTdSearch:hover{
+	cursor: pointer;
+}
+
+table#search td.cTdSearch:hover{
+	text-decoration: underline;
+}
+
+table#search caption{
+	background-color: #606060; 
+	color: #ffffff; 
+	padding: 10px;
+	width: 100%;
+	font-size: 13pt;
+    font-weight: bolder;
+}
+
+
+body {
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+	min-width: 1300px;
+}
+
+div#senha{
+	width: 400px;
+	background-color: white;
+	position:relative;
+	top:300px;
+	left:40%;
+	margin-top:-50px;
+	margin-left:-50px;
+}
+
+div#cabeca{
+	position: relative;
+	width: 400px;
+	height: 29px;
+	background-color: rgba(0,0,0,0.7);
+	padding-left: 3px;
+}
+
+div#cabeca h1{
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+
+div#cx{
+	position: relative;
+	width: 400px;
+	height: 125px;
+}
+
+table#tabLogin{
+	position: relative;
+	margin-left: 95px;
+	margin-top: 50px
+}
+
+table#tabLogin td{
+	font-weight: bold;
+	color: #606060;
+	text-shadow: 3px 3px 10px rgba(0,0,0,.3);
+	font-size: 20pt;
+}
+
+
+div#pe{ 
+	position: relative;
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 3px;
+}
+
+div#hider{
+	position: absolute;
+	float: right;
+    background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+div#hider:hover{
+	opacity: 2;
+}
+
+select {
+	width: 100%;
+}
+
+div#interface {
+	width: 90%;
+	background-color: #ffffff;
+	margin: 0 auto 0px auto; /* cima direita baixo esquerda*/
+	box-shadow: 0px 0px 10px black;
+	padding: 0px; /* cima direita baixo esquerda*/
+}
+
+header#cabecalho {
+	border-bottom: 1px solid #606060;
+	background-color: #F0F0F0;
+	text-align: center;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+}
+
+header#cabecalho h1 {
+	font-family: Arial, sans-serif;
+	font-size: 40pt;
+	color: #606060; /* cinza escuro */
+	text-shadow: 3px 3px 10px rgba(0,0,0,.6); /* vertical horizontal desfocamento cor */
+	margin-top: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+input#logoff{
+	color: #606060;
+    cursor: pointer;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    float: right;
+}
+
+
+section#site {
+	width: 25%;
+	height: auto;
+	float: left; 
+	background-color: #F0F0F0;
+	margin-bottom: 10px;
+	color: #606060;
+	font-weight: bold;
+}
+
+
+
+section#site div#pontaCima {
+	background-color: #606060;
+	height: 90px;
+	width: auto;
+	margin-bottom: 0px;
+	text-align: center;
+	padding-top: 40px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+section#site div#pontaBaixo {
+	background-color: #606060;
+	height: 120px;
+	width: auto;
+	margin-top: 0px;
+	text-align: center;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.6);
+}
+
+
+section#site button {
+	height: 30px;
+	width: 90%;
+	text-align: center;
+	padding: 5px;
+	border-radius: 0px;
+	border: 3px solid rgba(0,0,0,.5);
+}
+
+
+
+section#site span.btn_menu_cliente{
+	display: block;
+	background-color: rgba(0,0,0,0.7);
+	border-bottom: 1px solid rgb(255,255,255);
+	color: rgba(255,255,255,.9);
+	font-weight: bold;
+	text-shadow: 3px 3px 10px rgba(0,0,0,.8);
+	width: 100%;
+	padding: 5%;
+	box-shadow: 0px 0px 1px rgba(0,0,0,.6);
+	cursor: pointer;
+}
+
+section#site span.btn_menu_cliente:last-child{
+	background-color: #fff;
+	border-bottom: 0px;
+}
+
+section#site span.btn_menu_cliente:hover{
+	background-color: rgba(0,0,0,0.3);
+	color: rgb(0,0,0);
+}
+
+section#site span.btn_menu_grupo{
+	display: block;
+	width: 100%;
+	padding-left: 10%;
+	padding-top: 3px;
+	padding-bottom:3px;
+	background-color: #dddddd;
+	text-shadow: 3px 3px 10px rgba(0,0,0,.3);
+	color: rgb(0,0,0);
+	cursor: pointer;
+}
+
+section#site span.btn_menu_grupo:hover{
+	background-color: rgba(0,0,0,0.2);
+	color: rgb(0,0,0);
+	
+}
+
+section#site span.btn_menu_sub{
+	display: block;
+	width: 100%;
+	/*background-color: #dddddd;*/
+	color: rgb(0,0,0);
+	padding: 3%;
+	padding-left: 16%;
+	cursor: pointer;
+}
+
+section#site span.btn_menu_sub:hover{
+	text-decoration: underline;
+}
+
+div#busca{
+	border: 2px solid #dddddd;
+	border-radius: 10px;
+	background-color: #ffffff;
+	width: 300px;
+	height: 32px;
+	float: right;
+	padding-left: 8px;
+	padding-right: 0px;
+	margin-top: -16px;
+	margin-right: 0px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+div#busca input#cBusca[type=text]{
+	float: left;
+	background-color: transparent;
+	height: 28px;
+	border: 0px;
+	padding: 0px;
+}
+
+div#busca button{
+	float: right;
+	border: none;
+	border-radius: 0 7px 7px 0;
+	height: 30px;
+	font-weight: bold;
+	background-color: #dddddd;
+	width: 68px;
+	color: #606060;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+aside {
+	float: right;
+	width: 75%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: left;
+}
+
+
+fieldset {
+	border-color: rgba(255,255,255,.5);
+	margin-bottom: 30px;
+}
+
+fieldset legend{
+	font-family: bolder;
+	color: #606060; /* cinza escuro */
+	text-shadow: 0px 0px 3px rgba(0,0,0,.6); /* vertical horizontal desfocamento cor */
+}
+
+fieldset#cadastroClientes {
+	display: none;
+	padding: 30px;
+}
+
+fieldset#cadastroClientes label {
+	margin-right: 30px;
+}
+
+fieldset#cadastroClientes table {
+	margin-top: 40px;
+}
+
+fieldset#cadastroClientes div {
+	display: none;
+}
+
+fieldset#cadastroClientes input[type=submit] {
+	margin-top: 30px;
+}
+
+fieldset input[type=text]{
+	font-size: 10pt;
+	font-family: sans-serif;
+	background-color: #F0F0F0;
+	padding: 3px;
+}
+
+fieldset input[type=text]#iServidorServico{
+	/*font-size: 10pt;*/
+	font-family: sans-serif;
+	background-color: #F0F0F0;
+	padding: 3px;
+	width: 350%;
+}
+
+fieldset input[type=text]#iRazaoSocialDadosCadastrais,
+fieldset input[type=text]#iCnpjDadosCadastrais,
+fieldset input[type=text]#iEndDadosCadastrais{
+	font-size: 10pt;
+	font-family: sans-serif;
+	background-color: #F0F0F0;
+	padding: 3px;
+	width: 250%;
+}
+
+fieldset span.obrig{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(255,0,0);
+}
+
+fieldset span.delSubGrupoSuce,
+fieldset span.delGrupoSuce,
+fieldset span.procSuce,
+fieldset span.suce{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(0,0,255);
+	position: relative;
+	float: right;
+	bottom: 40px;
+}
+fieldset span.notDelSubGrupoSuce,
+fieldset span.notDelGrupoSuce,
+fieldset span.procNotSuce,
+fieldset span.nsuce{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(255,0,0);
+	position: relative;
+	float: right;
+	bottom: 40px;
+}
+
+fieldset span.existCl{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(0,150,0);
+	position: relative;
+	float: right;
+	bottom: 40px;
+}
+
+fieldset span.existGr,
+fieldset span.existSGr{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(0,150,0);
+	position: relative;
+	float: right;
+	bottom: 40px;
+}
+
+fieldset span#iResultGeral,
+fieldset span#iResultDadosLoja,
+fieldset span#iResultOutrosAcessos,
+fieldset span#iResultGw,
+fieldset span#iResultServidor,
+fieldset span#iResultGsm,
+fieldset span#iResultLanalogica,
+fieldset span#iResult0800,
+fieldset span#iResultTroncoE1{
+	font-size: 8pt;
+	font-family: Arial;
+	color: rgb(0,150,0);
+	position: relative;
+	float: right;
+	margin-top: -10px;
+}
+
+table.corpoIntranet td#vazia{
+	height: 50px;
+}
+
+table.corpoIntranet td{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+table.corpoIntranet option{
+	height: 25px;
+}
+
+fieldset input[type=text]:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+div#cadDadosCliente table{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+footer#rodape {
+	clear: both; /* Limpa as configuracoes realizadas acima */
+	font-weight: bold;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.6);
+}
+
+footer#rodape p {
+	text-align: center;
+	color: #ffffff;
+	background-color: #dddddd; 
+}
+
+.ButtonX {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#dcdcdc;
+	font-size:11px;
+	font-weight:bold;
+	padding:0px 3px;
+	text-decoration:none;
+}
+
+.ButtonX:hover {
+	border:2px solid #A52A2A;
+	color:#A52A2A;
+}
+
+
+.Button {
+	width: 100px;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	padding:10px 10px;
+	text-decoration:none;
+}
+
+.Button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+.ButtonX:active,
+.Button:active {
+	position:relative;
+	top:1px;
+}
+
